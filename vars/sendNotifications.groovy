@@ -13,6 +13,6 @@ def call() {
       mimeType: 'text/html',
       subject: subject,
       body: details
-      //recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+      recipientProviders: [[$class: 'DevelopersRecipientProvider']]
     )
 }
