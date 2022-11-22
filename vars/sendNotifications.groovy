@@ -15,7 +15,7 @@ def call() {
       body: details
       //recipientProviders:  emailextrecipients([developers()])
       //recipientProviders: [[$class: 'DevelopersRecipientProvider']]
-      script: recipientProviders:  emailextrecipients([[$class: 'DevelopersRecipientProvider']])
+      recipientProviders:  emailextrecipients([[$class: 'DevelopersRecipientProvider']])
     )
   //emailext body: 'Test', recipientProviders: [developers()], subject: 'Test'
 }
