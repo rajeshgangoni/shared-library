@@ -12,7 +12,7 @@ def call() {
       //to: 'rajesh.gangoni@sunrise.net , rajeshgangoni@gmail.com',
       mimeType: 'text/html',
       subject: subject,
-      body: details
+      body: details,
       //recipientProviders:  emailextrecipients([developers()])
       //recipientProviders: [[$class: 'DevelopersRecipientProvider']]
       recipientProviders:  emailextrecipients([[$class: 'DevelopersRecipientProvider']])
