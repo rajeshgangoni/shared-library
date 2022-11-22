@@ -9,11 +9,12 @@ def call() {
               // } 
 
   emailext (
-      //to: 'rajesh.gangoni@sunrise.net , rajeshgangoni@gmail.com',
+      to: 'rajesh.gangoni@sunrise.net , rajeshgangoni@gmail.com',
       mimeType: 'text/html',
       subject: subject,
       body: details
-      recipientProviders:  emailextrecipients([developers()])
+      //recipientProviders:  emailextrecipients([developers()])
       //recipientProviders: [[$class: 'DevelopersRecipientProvider']]
     )
+  emailext body: 'Test', recipientProviders: [developers()], subject: 'Test'
 }
