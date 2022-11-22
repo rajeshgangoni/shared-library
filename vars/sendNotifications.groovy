@@ -13,7 +13,7 @@ def call() {
       mimeType: 'text/html',
       subject: subject,
       body: details
-      recipientProviders:  [developers()]
+      recipientProviders:  emailextrecipients([developers()])
       //recipientProviders: [[$class: 'DevelopersRecipientProvider']]
     )
 }
